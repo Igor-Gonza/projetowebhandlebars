@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">SISTEMA WEB</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Cadastrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/consultar">Consultar</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid p-4">
+    <h1 class="h3">Atualizar - Agendamento de Potenciais Clientes</h1>
+    <h2 class="h5 mb-3">Sistema utilizado para agendamento de serviços</h2>
+    <form action="/cadastrar" method="post">
+        <div class="mb-3">
+            <label for="nameInput" class="form-label">Nome</label>
+            <input type="text" class="form-control" name="nome" id="nameInput">
+        </div>
+        <div class="mb-3">
+            <label for="phoneInput" class="form-label">Telefone</label>
+            <input type="text" class="form-control" id="phoneInput">
+        </div>
+        <div class="mb-3">
+            <label for="originInput" class="form-label">Origem</label>
+            <select class="form-select" id="originInput">
+                <option value="telefone">Telefone</option>
+                <option value="fixo">Fixo</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="contactDateInput" class="form-label">Data do Contato</label>
+            <input type="date" class="form-control" id="contactDateInput">
+        </div>
+        <div class="mb-3">
+            <label for="observationInput" class="form-label">Observação</label>
+            <textarea class="form-control" id="observationInput" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Atualizar</button>
+    </form>
+</div>
